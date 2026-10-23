@@ -6,5 +6,5 @@
 
 <!-- Button linking to contact.html -->
 <a href="contact.html">
-  <button type="button">Go to Contact Page</button>
+  <button type="button">Go to girl things</button>
 </a>
