@@ -1,4 +1,9 @@
-# lumitisity.github.io
+# lumitisity
+<!DOCTYPE html>
+<style></style>
+  body {
+    background-color: black;
+    }
 <!-- Button linking to about.html -->
 <a href="about.html">
   <button type="button">Go to Cinnamon Love</button>
