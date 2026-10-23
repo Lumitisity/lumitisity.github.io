@@ -8,3 +8,13 @@
 <a href="contact.html">
   <button type="button">Go to girl things</button>
 </a>
+
+<!-- Button linking to parallel lives.html -->
+<a href="Parallel_Lives.html">
+  <button type="button">Go to Parallel Lives</button>
+</a>
+
+<!-- Button linking to Promise You Won't Leave.html -->
+<a href="Promise_You_Wont_Leave.html">
+  <button type="button">Go to Promise You Won't Leave</button>
+</a>
