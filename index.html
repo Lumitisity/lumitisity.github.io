@@ -1,46 +1,32 @@
-#lumitisity
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-        <title>Title</title>
-        <link rel="icon" type="images/x-icon" href="Dottie.png">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#241334">
+<title>Lumitisity — A little world of stories</title>
+<link rel="icon" type="image/png" href="Dottie.png">
 <style>
-  body {
-    background-color: 9F46E3;
-    }
-
-    button {
-        color: black;
-        background-color: white;
-        border: 5px black;
-        border-radius: 13%;
-    }
-
-    .blackButton {
-        color: black;
-        background-color: black;
-        border: 5px solid black
-        border-radius: 13%;
-    }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+:root{color-scheme:dark;--bg:#160e20;--text:#f9f1ff;--muted:#c0b0cb;--line:rgba(233,207,255,.15);--accent:#d5b0ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh}body:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 75% 0%,#643b804d,transparent 55%),radial-gradient(ellipse at 0% 40%,#44235a55,transparent 55%);pointer-events:none}a{color:inherit} .shell{max-width:1160px;margin:auto;padding:0 40px}header{display:flex;align-items:center;justify-content:space-between;padding:30px 0;border-bottom:1px solid var(--line)}.brand{text-decoration:none;font-size:21px;letter-spacing:-.8px;font-weight:700}.brand span{color:var(--accent);margin-right:10px}.nav{font-size:13px;text-decoration:none;color:var(--muted);display:flex;gap:10px;align-items:center}.dot{width:6px;height:6px;background:#c7a1ec;border-radius:50%}.hero{padding:86px 0 65px;position:relative}.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:10px;font-weight:700;color:var(--accent);display:flex;align-items:center;gap:12px}.eyebrow:before{content:'';width:28px;height:1px;background:var(--accent)}h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(46px,7.6vw,88px);font-weight:500;line-height:1.08;letter-spacing:-3px;margin:23px 0}h1 em{font-weight:500;color:var(--accent)}.intro{font-size:15px;line-height:1.8;color:var(--muted);max-width:400px;margin:0}.hero-star{position:absolute;right:55px;top:100px;font-size:100px;color:var(--accent);opacity:.65;transform:rotate(12deg);font-family:Georgia,serif}.section-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.section-heading h2{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;margin:0}.section-heading span{font-size:11px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#21152d;transition:transform .25s,border-color .25s,box-shadow .25s}.card:hover{transform:translateY(-5px);border-color:#bc8ee680;box-shadow:0 15px 40px #0003}.art{height:185px;position:relative;overflow:hidden;display:grid;place-items:center}.art:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#170d2422,transparent)}.art-one{background:radial-gradient(ellipse at 25% 30%,#be8491,transparent 70%),#704459}.art-two{background:radial-gradient(ellipse at 80% 10%,#d9a7d0,transparent 80%),#865b97}.art-three{background:linear-gradient(125deg,#424b7d,#9984b9)}.art-four{background:radial-gradient(ellipse at 50% 100%,#a47b9d,transparent 70%),#51425f}.art svg{height:150px;width:240px;opacity:.85}.number{position:absolute;top:16px;left:19px;font-size:10px;letter-spacing:2px;color:#fff9}.card-body{padding:23px 24px;display:flex;align-items:center;justify-content:space-between;gap:15px}.category{font-size:9px;color:var(--accent);text-transform:uppercase;letter-spacing:2px;margin-bottom:9px}.card h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:25px;margin:0}.arrow{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--accent);flex-shrink:0;transition:background .2s,color .2s}.card:hover .arrow{background:var(--accent);color:#21152d}footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:25px 0;margin-top:56px;font-size:11px;color:var(--muted)}a:focus-visible{outline:3px solid #e1c5ff;outline-offset:5px}html{scroll-behavior:smooth}::selection{background:#d5b0ff;color:#160e20}
+@media(min-width:1000px){.grid{gap:24px}.art{height:210px}}@media(max-width:600px){.shell{padding:0 22px}header{padding:23px 0}.hero{padding:58px 0 43px}h1{letter-spacing:-1.8px}.hero-star{display:none}.grid{grid-template-columns:1fr}.art{height:180px}.card h3{font-size:23px}footer{margin-top:36px;flex-direction:column;gap:8px}.nav{font-size:11px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.arrow{transition:none}.card:hover{transform:none}}
 </style>
-<!-- Button linking to about.html -->
-<a href="Cinnamon_Love.html">
-  <button type="button">Go to Cinnamon Love</button>
-</a>
-
-<!-- Button linking to contact.html -->
-<a href="girl_things.html">
-  <button type="button">Go to girl things</button>
-</a>
-
-<!-- Button linking to parallel lives.html -->
-<a href="Parallel_Lives.html">
-  <button type="button">Go to Parallel Lives</button>
-</a>
-<a href="LINK"><button class="blackButton">LINK TEXT</button>
-
-<!-- Button linking to Promise You Won't Leave.html -->
-<a href="Promise_You_Wont_Leave.html">
-  <button type="button">Go to Promise You Won't Leave</button>
-</a>
+</head>
+<body>
+<div class="shell">
+<header><a class="brand" href="index.html" aria-label="Lumitisity home"><span aria-hidden="true">✳</span>lumitisity</a><a class="nav" href="#collection"><span class="dot" aria-hidden="true"></span>A little world of stories</a></header>
+<main>
+<section class="hero" aria-labelledby="page-title"><div class="eyebrow">Welcome to my corner</div><h1>Some stories<br>stay <em>with you.</em></h1><p class="intro">Little worlds, big feelings. Find a story to get lost in, and stay a little while.</p><span class="hero-star" aria-hidden="true">✧</span></section>
+<section id="collection" aria-labelledby="collection-title"><div class="section-heading"><h2 id="collection-title">The collection</h2><span>04 stories to explore</span></div>
+<div class="grid">
+<a class="card" href="Cinnamon_Love.html"><div class="art art-one"><span class="number">01 /</span><svg viewBox="0 0 240 150" fill="none" aria-hidden="true"><circle cx="120" cy="76" r="60" stroke="#f8d5bf" stroke-opacity=".25"/><path d="M120 119C98 104 67 86 76 63C85 41 108 47 120 63C132 47 155 41 164 63C173 86 142 104 120 119Z" stroke="#ffe1cc" stroke-width="1.5"/><path d="M36 44h14m-7-7v14m146 59h14m-7-7v14" stroke="#ffe1cc"/></svg></div><div class="card-body"><div><div class="category">The collection · 01</div><h3>Cinnamon Love</h3></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="card" href="girl_things.html"><div class="art art-two"><span class="number">02 /</span><svg viewBox="0 0 240 150" fill="none" aria-hidden="true"><g stroke="#ffe5f8" stroke-width="1.3"><path d="M120 28C140 53 143 62 120 75C97 62 100 53 120 28ZM167 75C142 95 133 98 120 75C133 52 142 55 167 75ZM120 122C100 97 97 88 120 75C143 88 140 97 120 122ZM73 75C98 55 107 52 120 75C107 98 98 95 73 75Z"/><circle cx="120" cy="75" r="8"/><path d="M49 39l3 7 7 3-7 3-3 7-3-7-7-3 7-3Zm140 59 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></g></svg></div><div class="card-body"><div><div class="category">The collection · 02</div><h3>girl things</h3></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="card" href="Parallel_Lives.html"><div class="art art-three"><span class="number">03 /</span><svg viewBox="0 0 240 150" fill="none" aria-hidden="true"><g stroke="#e2ddff" stroke-width="1.4"><path d="M66 124V62a30 30 0 0 1 60 0v62H66Z"/><path d="M114 124V62a30 30 0 0 1 60 0v62h-60Z"/><path d="M51 124h138M81 124V64a15 15 0 0 1 30 0v60m18 0V64a15 15 0 0 1 30 0v60" stroke-opacity=".4"/><path d="M190 29v14m-7-7h14"/></g></svg></div><div class="card-body"><div><div class="category">The collection · 03</div><h3>Parallel Lives</h3></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="card" href="Promise_You_Wont_Leave.html"><div class="art art-four"><span class="number">04 /</span><svg viewBox="0 0 240 150" fill="none" aria-hidden="true"><g stroke="#f0d9ee" stroke-width="1.4"><ellipse cx="101" cy="78" rx="30" ry="41" transform="rotate(-30 101 78)"/><ellipse cx="139" cy="78" rx="30" ry="41" transform="rotate(30 139 78)"/><path d="m120 19 3 7 7 3-7 3-3 7-3-7-7-3 7-3ZM48 94v12m-6-6h12m139-53v12m-6-6h12"/></g></svg></div><div class="card-body"><div><div class="category">The collection · 04</div><h3>Promise You Won’t Leave</h3></div><span class="arrow" aria-hidden="true">↗</span></div></a>
+</div></section>
+</main>
+<footer><span>© Lumitisity</span><span>A little imagination. A lot of heart. ✧</span></footer>
+</div>
+</body>
+</html>
