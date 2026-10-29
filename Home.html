@@ -11,6 +11,16 @@
 :root{color-scheme:dark;--bg:#160e20;--text:#f9f1ff;--muted:#c0b0cb;--line:rgba(233,207,255,.15);--accent:#d5b0ff}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh}body:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 75% 0%,#643b804d,transparent 55%),radial-gradient(ellipse at 0% 40%,#44235a55,transparent 55%);pointer-events:none}a{color:inherit} .shell{max-width:1160px;margin:auto;padding:0 40px}header{display:flex;align-items:center;justify-content:space-between;padding:30px 0;border-bottom:1px solid var(--line)}.brand{text-decoration:none;font-size:21px;letter-spacing:-.8px;font-weight:700}.brand span{color:var(--accent);margin-right:10px}.nav{font-size:13px;text-decoration:none;color:var(--muted);display:flex;gap:10px;align-items:center}.dot{width:6px;height:6px;background:#c7a1ec;border-radius:50%}.hero{padding:86px 0 65px;position:relative}.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:10px;font-weight:700;color:var(--accent);display:flex;align-items:center;gap:12px}.eyebrow:before{content:'';width:28px;height:1px;background:var(--accent)}h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(46px,7.6vw,88px);font-weight:500;line-height:1.08;letter-spacing:-3px;margin:23px 0}h1 em{font-weight:500;color:var(--accent)}.intro{font-size:15px;line-height:1.8;color:var(--muted);max-width:400px;margin:0}.hero-star{position:absolute;right:55px;top:100px;font-size:100px;color:var(--accent);opacity:.65;transform:rotate(12deg);font-family:Georgia,serif}.section-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.section-heading h2{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;margin:0}.section-heading span{font-size:11px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#21152d;transition:transform .25s,border-color .25s,box-shadow .25s}.card:hover{transform:translateY(-5px);border-color:#bc8ee680;box-shadow:0 15px 40px #0003}.art{height:185px;position:relative;overflow:hidden;display:grid;place-items:center}.art:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#170d2422,transparent)}.art-one{background:radial-gradient(ellipse at 25% 30%,#be8491,transparent 70%),#704459}.art-two{background:radial-gradient(ellipse at 80% 10%,#d9a7d0,transparent 80%),#865b97}.art-three{background:linear-gradient(125deg,#424b7d,#9984b9)}.art-four{background:radial-gradient(ellipse at 50% 100%,#a47b9d,transparent 70%),#51425f}.art-five{background:radial-gradient(ellipse at 50% 35%,#a986bb,transparent 70%),#3d294d}.art-six{background:linear-gradient(135deg,#252d4b,#6e638f)}.art svg{height:150px;width:240px;opacity:.85}.number{position:absolute;top:16px;left:19px;font-size:10px;letter-spacing:2px;color:#fff9}.card-body{padding:23px 24px;display:flex;align-items:center;justify-content:space-between;gap:15px}.category{font-size:9px;color:var(--accent);text-transform:uppercase;letter-spacing:2px;margin-bottom:9px}.card h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:25px;margin:0}.arrow{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--accent);flex-shrink:0;transition:background .2s,color .2s}.card:hover .arrow{background:var(--accent);color:#21152d}footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:25px 0;margin-top:56px;font-size:11px;color:var(--muted)}a:focus-visible{outline:3px solid #e1c5ff;outline-offset:5px}html{scroll-behavior:smooth}::selection{background:#d5b0ff;color:#160e20}
 @media(min-width:1000px){.grid{gap:24px}.art{height:210px}}@media(max-width:600px){.shell{padding:0 22px}header{padding:23px 0}.hero{padding:58px 0 43px}h1{letter-spacing:-1.8px}.hero-star{display:none}.grid{grid-template-columns:1fr}.art{height:180px}.card h3{font-size:23px}footer{margin-top:36px;flex-direction:column;gap:8px}.nav{font-size:11px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.arrow{transition:none}.card:hover{transform:none}}
+.art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.art .number {
+    z-index: 1;
+}
+
 </style>
 </head>
 <body>
@@ -143,23 +153,198 @@
     </div>
     <div class="card-body"><div><div class="category">The collection · 07</div><h3>WARHOUND · Volume One</h3></div><span class="arrow" aria-hidden="true">↗</span></div>
 </a>
+<!-- CARD 07: replace the filename and title -->
 <a class="card" href="Pong.html">
-    <div class="art art-six">
-        <span class="number">03 /
-        </span>
-        <svg viewBox="0 0 240 150" fill="none" aria-hidden="true">
-            <g stroke="#e2ddff" stroke-width="1.4">
-                <path d="M66 124V62a30 30 0 0 1 60 0v62H66Z"/>
-                <path d="M114 124V62a30 30 0 0 1 60 0v62h-60Z"/>
-                <path d="M51 124h138M81 124V64a15 15 0 0 1 30 0v60m18 0V64a15 15 0 0 1 30 0v60" stroke-opacity=".4"/>
-                <path d="M190 29v14m-7-7h14"/>
-            </g>
-        </svg>
+    <div class="art art-7">
+        <img src="images/art-07.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">08 /</span>
     </div>
     <div class="card-body">
         <div>
-            <div class="category">The collection · 03</div><h3>Pong</h3></div><span class="arrow" aria-hidden="true">↗
-            </span>
+            <div class="category">The collection · 08</div>
+            <h3>Pong</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 08: replace the filename and title -->
+<a class="card" href="Story_09.html">
+    <div class="art art-8">
+        <img src="images/art-08.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">09 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 09</div>
+            <h3>Story Title 09</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 09: replace the filename and title -->
+<a class="card" href="Story_10.html">
+    <div class="art art-9">
+        <img src="images/art-09.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">10 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 10</div>
+            <h3>Story Title 10</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 10: replace the filename and title -->
+<a class="card" href="Story_11.html">
+    <div class="art art-10">
+        <img src="images/art-10.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">11 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 11</div>
+            <h3>Story Title 11</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 11: replace the filename and title -->
+<a class="card" href="Story_12.html">
+    <div class="art art-11">
+        <img src="images/art-11.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">12 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 12</div>
+            <h3>Story Title 12</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 12: replace the filename and title -->
+<a class="card" href="Story_13.html">
+    <div class="art art-12">
+        <img src="images/art-12.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">13 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 13</div>
+            <h3>Story Title 13</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 13: replace the filename and title -->
+<a class="card" href="Story_14.html">
+    <div class="art art-13">
+        <img src="images/art-13.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">14 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 14</div>
+            <h3>Story Title 14</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 14: replace the filename and title -->
+<a class="card" href="Story_15.html">
+    <div class="art art-14">
+        <img src="images/art-14.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">15 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 15</div>
+            <h3>Story Title 15</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 15: replace the filename and title -->
+<a class="card" href="Story_16.html">
+    <div class="art art-15">
+        <img src="images/art-15.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">16 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 16</div>
+            <h3>Story Title 16</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 16: replace the filename and title -->
+<a class="card" href="Story_17.html">
+    <div class="art art-16">
+        <img src="images/art-16.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">17 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 17</div>
+            <h3>Story Title 17</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 17: replace the filename and title -->
+<a class="card" href="Story_18.html">
+    <div class="art art-17">
+        <img src="images/art-17.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">18 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 17</div>
+            <h3>Story Title 18</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 18: replace the filename and title -->
+<a class="card" href="Story_19.html">
+    <div class="art art-18">
+        <img src="images/art-18.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">19 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 19</div>
+            <h3>Story Title 19</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+    </div>
+</a>
+
+<!-- CARD 19: replace the filename and title -->
+<a class="card" href="Story_20.html">
+    <div class="art art-19">
+        <img src="images/art-19.svg" alt="" loading="lazy" width="720" height="300">
+        <span class="number">20 /</span>
+    </div>
+    <div class="card-body">
+        <div>
+            <div class="category">The collection · 20</div>
+            <h3>Story Title 20</h3>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
     </div>
 </a>
 </div></section>
